@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+.container-flex{
+    display: flex;
+    height: 660px;
+    width: 1200px;
+    margin:100px 0 0 320px;
+    border-radius: 3px;
+    border: solid 1px #bdbdbd;
+    box-shadow:7px 7px 7px grey;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/*===========================================================*/
+/*LUGARZINHO PRA DAR UMAS ULTIMAS AJEITADAS EM COMPONENTES SIMPLES*/
+#span-albert,#span-marie,#span-newton,#span-copernico,#span-white,#span-null{
+    margin-top:10px;
+    margin-bottom:40px;
+}
+
+
+/*===========================================================*/
+
+#card-albert,#card-marie,#card-newton,#card-copernico{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Fjalla One;
+    font-size:30px;
+    font-weight: 700;
+    height: 270px;
+    width: 240px;
+    border-radius:5px;    
+    margin-top: 50px;
+    box-shadow:7px 7px 7px grey;
+    padding-top: 20px;
+}
+
+#card-null, #card-white{
+
+    width: 400px;
+    height: 210px;
+    background-color: rgb(207, 206, 204);
+}
+
+#btn-albert,#btn-marie,#btn-newton,#btn-copernico,#btn-null,#btn-white{
+    font-size: 24px;
+    width: 200px;
+    margin: 70px 20px 20px 20px;  
+    padding: 10px 20px 10px 20px;
+    border:1px solid grey;  
+    border-radius: 8px;
+}
+
+#btn-null, #btn-white{
+    margin: 50px  auto;
+    width: 300px;
+    padding: 20px 0 20px 0;
+}
+
+/*Nome da classe referente a div que contem os botões auxiliares*/
+.btns-aux{
+    display:flex;
+    width:1200px;
+    margin: 10px 0 0 320px;
+    justify-content: space-between;  
+}
+
+/*são as classes referentes aos respectivos botões*/
+.btn-aux-clean, .btn-aux-result{
+    font-size: 30px;
+    font-family: Roboto;
+    width: 200px;
+    margin: 30px 20px 20px 20px;  
+    padding-bottom:50px;
+    border-radius:8px;
+    color:rgb(235, 232, 232);
+    border:none;
+    width:40%;
+    text-decoration: none;
+    text-align: center;
+    padding-top:50px;
+    transition: 0.2s; 
+}
+
+
+.btn-aux-clean:hover, .btn-aux-result:hover{
+    opacity:90%;   
+}
+
+/*Tentei colocar , na props, o backgroundColor - mas não respeitou a width e height do card -*/
+
+#card-albert{
+    background-color: rgb(152, 159, 255);
+}
+
+#card-marie{
+    background-color: rgb(202, 127, 137);
+}
+
+#card-newton{
+    background-color: rgb(238, 231, 135);
+}
+
+#card-copernico{
+    background-color:rgb(139, 224, 150);
+
+}
+
+/*=======================================================================================================
+                                        RESULT PART*/
+.container-flex-result{
+    display: flex;
+    height: 660px;
+    width: 1200px;
+    margin:120px 0 0 320px;
+    border-radius: 3px;
+    border: solid 1px #bdbdbd;
+    box-shadow:7px 7px 7px grey;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
