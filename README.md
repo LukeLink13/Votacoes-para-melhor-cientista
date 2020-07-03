@@ -13,3 +13,7 @@
   <li>Javascript</li>
   <li>ReactJS</li>
 </ul>
+
+
+
+<h2>OBS:</h2><span>Atualmente o projeto está com um erro em do React, porém já estou indo atrás pra consertar :)</span>
