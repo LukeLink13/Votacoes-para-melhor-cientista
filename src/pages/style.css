@@ -38,14 +38,23 @@
 }
 
 #card-null, #card-white{
-
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Fjalla One;
+    font-size: 23px;
+    font-weight: 700;
+    border-radius:5px; 
+    box-shadow:7px 7px 7px grey;   
     width: 400px;
-    height: 210px;
+    height: 240px;
     background-color: rgb(207, 206, 204);
 }
 
 #btn-albert,#btn-marie,#btn-newton,#btn-copernico,#btn-null,#btn-white{
     font-size: 24px;
+    font-family: Roboto;
+    font-weight: 500;
     width: 200px;
     margin: 70px 20px 20px 20px;  
     padding: 10px 20px 10px 20px;
@@ -54,7 +63,7 @@
 }
 
 #btn-null, #btn-white{
-    margin: 50px  auto;
+    margin: 30px  auto;
     width: 300px;
     padding: 20px 0 20px 0;
 }
@@ -110,16 +119,26 @@
 
 /*=======================================================================================================
                                         RESULT PART*/
-.container-flex-result{
-    display: flex;
-    height: 660px;
-    width: 1200px;
-    margin:120px 0 0 320px;
-    border-radius: 3px;
-    border: solid 1px #bdbdbd;
-    box-shadow:7px 7px 7px grey;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
+#back-to-home{
+    margin-top: -60px;
+    margin-left:20px;
+    font-size: 20px;
+    font-family: Roboto;
+    text-decoration: none;
+    text-decoration-color: black;
+    position:absolute;
+    border: solid rgb(139, 138, 138) 1.3px;
+    box-shadow: 4px 4px 4px grey;
+    border-radius:6px;
+    padding: 14px 10px;
+    transition:0.2s;
 }
 
-
+#back-to-home:hover{
+    opacity: 70%;
+}
+#back-to-home:visited{
+    color: black;
+    
+}

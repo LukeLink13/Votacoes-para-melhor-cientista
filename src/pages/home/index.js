@@ -5,40 +5,35 @@ import Card from '../../components/Card';
 
 import '../style.css';
 
-
-     const [counter, setCounter] = useState(0);
-     const [counter1, setCounter1] = useState(0)
-     const [counter2, setCounter2] = useState(0);
-     const [counter3, setCounter3] = useState(0);
-     const [counter4, setCounter4] = useState(0);
-     const [counter5, setCounter5] = useState(0);
-     
-     
-
+    const votos = [];
     const armazenarVoto = (aux,aux1,aux2,aux3,aux4,aux5) => {
 
       votos.push(aux,aux1,aux2,aux3,aux4,aux5)
-      console.log(votos)
-    }
-    
-    const limparVotos = (aux,aux1,aux2,aux3,aux4,aux5) =>{
-
-        setCounter (aux = 0);
-        setCounter1 (aux1 = 0) ;
-        setCounter2 (aux2 = 0) ;
-        setCounter3 (aux3 = 0) ;
-        setCounter4 (aux4 = 0) ;
-        setCounter5 (aux5 = 0) ;
-
+      console.log(votos.splice(0,6));
     }
 
-
-const votos = [];
-
-export {votos};
+    export {votos};
 
 export default function Home(props){
       
+  const [counter, setCounter] = useState(0);
+  const [counter1, setCounter1] = useState(0)
+  const [counter2, setCounter2] = useState(0);
+  const [counter3, setCounter3] = useState(0);
+  const [counter4, setCounter4] = useState(0);
+  const [counter5, setCounter5] = useState(0);
+  
+  const limparVotos = (aux,aux1,aux2,aux3,aux4,aux5) =>{
+
+    setCounter (aux = 0);
+    setCounter1 (aux1 = 0) ;
+    setCounter2 (aux2 = 0) ;
+    setCounter3 (aux3 = 0) ;
+    setCounter4 (aux4 = 0) ;
+    setCounter5 (aux5 = 0) ;
+
+}
+
     return (
         <div className="body">    
             <div className="container-flex">
