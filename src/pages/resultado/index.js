@@ -33,19 +33,7 @@ export default function Result(){
 
     const clearArray = () =>{votos.splice(0,4)}
 
-    function namedCardWinner(){
-        
-            if(votos[0]>votos[1] && votos[0]>votos[2] && votos[0]>votos[3])
-            {return "card-albert"}
-            if(votos[1]>votos[0] && votos[1]>votos[2] && votos[1]>votos[3])
-            {return "card-marie"}
-
-            if(votos[2]>votos[0] && votos[2]>votos[1] && votos[2]>votos[3])
-            {return "card-newton"}
-
-            if(votos[3]>votos[0] && votos[3]>votos[1] && votos[3]>votos[2])
-            {return "card-copernico"}
-    }
+    
 
    
     return(
@@ -56,7 +44,7 @@ export default function Result(){
 
             <div className='container-flex-result'>
                 
-                <WinnerCard id={namedCardWinner()} className="card-winner">
+                <WinnerCard id="card-newton" className="card-winner">
 
                     
                 </WinnerCard>
