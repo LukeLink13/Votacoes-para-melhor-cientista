@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+.container-flex-result{
+
+    height: 660px;
+    width: 1200px;
+    margin:100px 0 0 320px;
+    border-radius: 3px;
+    border: solid 1px #bdbdbd;
+    box-shadow:7px 7px 7px grey;
+    
+}
+
+#back-to-home{
+  margin-top: -60px;
+  margin-left:20px;
+  font-size: 20px;
+  font-family: Roboto;
+  text-decoration: none;
+  text-decoration-color: black;
+  position:absolute;
+  border: solid rgb(139, 138, 138) 1.3px;
+  box-shadow: 4px 4px 4px grey;
+  border-radius:6px;
+  padding: 14px 10px;
+  transition:0.2s;
+}
+
+#back-to-home:hover{
+  opacity: 70%;
+}
+#back-to-home:visited{
+  color: black;
+  
+}
+
+@keyframes fadeInDown{
+    from{
+      opacity: 0;
+      transform: translateY(-55%)
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0%)
+    }
+}
+
+.card-winner{
+  margin:0 auto;
+  margin-bottom:50px;
+  margin-top:50px;
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+
+
+}
+
+#other-information{
+  display:flex;
+  justify-content: space-around;
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+
+}

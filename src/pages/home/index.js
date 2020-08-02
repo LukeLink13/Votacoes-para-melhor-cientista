@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import Card from '../../components/Card';
 
 
-import '../style.css';
+import './style.css';
 
-    const votos = [];
-    const armazenarVoto = (aux,aux1,aux2,aux3,aux4,aux5) => {
+    const votos = Array();
+    
+    const armazenarVoto = (aux,aux1,aux2,aux3) => {
 
-      votos.push(aux,aux1,aux2,aux3,aux4,aux5)
-      console.log(votos.splice(0,6));
+      votos.push(aux,aux1,aux2,aux3)
+      
     }
 
     export {votos};
