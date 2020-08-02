@@ -19,9 +19,7 @@ export default function Result(){
     let porcents = Array();
 
 
-   // let ordelyVotos = votos.sort((a,b) =>{
-    //    return a-b
-    //})
+  
 
     votos.map((num)=>{
 
